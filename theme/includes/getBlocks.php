@@ -23,6 +23,12 @@
             case 'mid_section':
               include 'blocks/mid_section.php';
               break;
+            case 'banner':
+              include 'blocks/banner.php';
+              break;
+            case 'about_us':
+              include 'blocks/about_us.php';
+              break;
             
           }
         }

@@ -1,0 +1,170 @@
+.about-us{
+    padding: 0 30px;
+    .about-us-container{
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 60px 0 60px;
+        .about-us-top{
+            display: flex;
+            justify-content: space-between;
+            .ship-to{
+                width: 45%;
+                .ship-to-container{
+                    .heading{
+                        margin-bottom: 20px;
+                        h3{
+                            font-family: 'Lato';
+                            font-style: normal;
+                            font-weight: 900;
+                            font-size: 40px;
+                            line-height: 48px;
+                            letter-spacing: 0.02em;
+                            text-transform: uppercase;
+                            background: linear-gradient(239.13deg, #19C2F3 11.65%, #0E74F9 95.45%);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            background-clip: text;
+                            text-fill-color: transparent;
+                        }
+                    }
+                    .tabs{
+                        margin-bottom: 25px;
+                        .tabs-inner{
+                            img{
+
+                            }
+                        }
+                    }
+                    .about-us-subtext{
+                        margin-bottom: 10px;
+                        padding-right: 25px;
+                        p{
+                            font-family: 'Inter';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 18px;
+                            line-height: 24px;
+                            letter-spacing: 0.06em;
+                            color: #000000;
+                            span{
+                                color: #0F75FA;
+                            }
+                        }
+                    }
+                    .about-us-list{
+                        padding-left: 30px;
+                        padding-right: 30px;
+                        ul{
+                            li{
+                                font-family: 'Inter';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 18px;
+                                line-height: 24px;
+                                letter-spacing: 0.06em;
+                                color: #000000;
+                            }
+                        }
+                    }
+                }
+            }
+            .demo{
+                width: 50%;
+                .demo-container{
+                    height: 100%;
+                    position: relative;
+                    border-radius: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    &::before{
+                        position: absolute;
+                        content: "";
+                        height: 100%;
+                        width: 100%;
+                        background : linear-gradient(180deg, #4C47EF 0%, rgba(76, 71, 239, 0) 129.08%);
+                        transform: rotate(-180deg);
+                        border-radius: 20px;
+                    }
+                    .demo-heading{
+                        position: relative;
+                        z-index: 12;
+                        margin-bottom: 25px;
+                        h4{
+                            font-family: 'Lato';
+                            font-style: normal;
+                            font-weight: 900;
+                            font-size: 42px;
+                            line-height: 50px;
+                            text-align: center;
+                            letter-spacing: 0.02em;
+                            text-transform: uppercase;
+                            background: linear-gradient(176.57deg, #FFFFFF -6.01%, rgba(255, 255, 255, 0.18) 165.14%);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            background-clip: text;
+                            text-fill-color: transparent;
+                        }
+                    }
+                    .button{
+                        position: relative;
+                        z-index: 12;
+                        a{
+                            font-family: 'Inter';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 22px;
+                            text-align: center;
+                            color: #FFFFFF;
+                            display: flex;
+                            align-items: center;
+                            background: linear-gradient(274.31deg, #4D44EF 5.99%, #3678E6 95.21%);
+                            box-shadow: 0px 0px 31px rgba(255, 255, 255, 0.55);
+                            border-radius: 50px;
+                            padding: 12px 40px;
+                            span{
+                                margin-right: 5px;
+                                img{
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .about-us-bottom{
+            margin-top: 60px;
+            .about-us-bottom-container{
+                p{
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 25px;
+                    letter-spacing: 0.06em;
+                    color: #000000;
+                    margin-bottom: 30px;
+                }
+                a{
+                    margin: 0 auto;
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 22px;
+                    text-align: center;
+                    background: linear-gradient(274.31deg, #4D44EF 5.99%, #3678E6 95.21%);
+                    box-shadow: 0px 0px 31px rgba(255, 255, 255, 0.55);
+                    color: #FFFFFF;
+                    border-radius: 50px;
+                    padding: 12px 40px;
+                    display: flex;
+                    width: max-content;
+                }
+            }
+        }
+    }
+}

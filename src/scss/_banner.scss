@@ -1,0 +1,179 @@
+.banner{
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 30px;
+    position: relative;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    .banner-container{
+        max-width: 1200px;
+        margin: 0 auto;
+        .banner-inner{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .left-col{
+                width: 35%;
+                .left-col-inner{
+                    .card{
+                        height: 540px;
+                        width: 340px;
+                        background: #FFFFFF;
+                        box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.15);
+                        border-radius: 20px;
+                        padding-bottom: 15px;
+                        .gif-container{
+                            height: 82%;
+                            .gif{
+                                height: 100%;
+                                position: relative;
+                                img{
+                                    transform: scale(1.6);
+                                    position: absolute;
+                                    z-index: 2222;
+                                    width: 524px;
+                                    top: -236px;
+                                    left: -133px;
+                                }
+                            }
+                        }
+                        .gif-text{
+                            padding: 0 40px;
+                            p{
+                                font-family: 'Inter';
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 20px;
+                                line-height: 22px;
+                                color: #000000;
+                            }
+                        }
+                        .gif-rating{
+                            margin-top: 10px;
+                            padding: 0 40px;
+                            img{
+                                
+                            }
+                            span{
+                                font-family: 'Inter';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 17px;
+                                color: rgba(0, 0, 0, 0.36);
+                            }
+                        }
+                    }
+                }
+            }
+            .right-col{
+                width: 60%;
+                .right-col-inner{
+                    .animated-text{
+                        margin-bottom: 10px;
+                        h4{
+                            font-family: 'Inter';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 42.5px;
+                            line-height: 51px;
+                            letter-spacing: 0.01em;
+                            color: #FFFFFF;
+                        }
+                    }
+                    .banner-text{
+                        position: relative;
+                        .banner-title{
+                            h1{
+                                font-family: 'Lato';
+                                font-style: normal;
+                                font-weight: 900;
+                                font-size: 98.9146px;
+                                line-height: 97px;
+                                letter-spacing: 0.07em;
+                                text-transform: uppercase;
+                                background: linear-gradient(196.91deg, rgba(255, 255, 255, 0.51) 16.22%, #FFFFFF 87.48%);
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent;
+                                background-clip: text;
+                                text-fill-color: transparent;
+                                mix-blend-mode: normal;
+                            }
+                        }
+                        .subtext{
+                            position: absolute;
+                            width: 48%;
+                            right: 0;
+                            bottom: 0;
+                            z-index: 2;
+                            p{
+                                font-family: 'Inter';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 18px;
+                                line-height: 22px;
+                                color: #FFFFFF;
+                            }
+                        }
+                    }
+                    .banner-button{
+                        margin-top: 30px;
+                        a{
+                            background: linear-gradient(274.31deg, #4D44EF 5.99%, #3678E6 95.21%);
+                            border-radius: 50px;
+                            padding: 15px 80px;
+                            font-family: 'Inter';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 18px;
+                            line-height: 22px;
+                            display: flex;
+                            align-items: center;
+                            width: max-content;
+                            transition: all 0.3s ease;
+                            color: #FFFFFF;
+                            span{
+                                margin-right: 5px;
+                                img{
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .banner-bottom-link{
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+            color: #3678E6;
+        }
+        img{
+            position: relative;
+            animation: ani 2s infinite ease-out;
+            cursor: pointer;
+        }
+        @keyframes ani{
+            from{
+                top : -5px;
+            }
+            to{
+                top: 10px;
+            }
+        }
+    }
+}
