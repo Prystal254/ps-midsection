@@ -1,0 +1,223 @@
+@mixin returns(){
+    .returns{
+        .inner{
+            position: relative;
+            height: 100%;
+            .stats{
+                margin-left: 90px;
+                text-transform: uppercase;
+                padding-top: 50px;
+                .top-text{
+                    font-family: $lato;
+                    font-weight: 900;
+                    font-size: 45px;
+                    line-height: 80%;
+                    letter-spacing: 0.02em;
+                    background-image: linear-gradient(185.73deg, #4841D2 9.97%, #0E74F9 113.54%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    text-fill-color: transparent;
+                    mix-blend-mode: multiply;
+                    position: relative;
+                    z-index: 5;
+                }
+                .numbers{
+                    font-family: $lato;
+                    font-weight: 900;
+                    font-size: 270px;
+                    line-height: 80%;
+                    letter-spacing: 0.02em;
+                    background-image: linear-gradient(223.5deg, #4841D2 14.9%, #0E74F9 88.34%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    text-fill-color: transparent;
+                    mix-blend-mode: multiply;
+                }
+                .text{
+                    font-family: $lato;
+                    font-weight: 900;
+                    font-size: 60px;
+                    line-height: 120%;
+                    letter-spacing: 0.02em;
+                    background-image: linear-gradient(185.73deg, #4841D2 9.97%, #0E74F9 113.54%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    text-fill-color: transparent;
+                    mix-blend-mode: multiply;
+                    position: relative;
+                    z-index: 5;
+                }
+            }
+            .description-blurb{
+                position: absolute;
+                z-index: 5;
+                top: 44%;
+                left: 80px;
+                max-width: 300px;
+                width: 100%;
+                padding: 24px;
+                border: 1px solid rgba(255, 255, 255, 0.4);
+                border-radius: 24px;
+                background: rgba(31, 31, 31, 0.9);
+                @media(max-width: 767px){
+                    top: 370px;
+                }
+                @media(max-width:767px){
+                    position: static;
+                }
+                .heart{
+                    position: absolute;
+                    cursor: pointer;
+                    top: 15px;
+                    right: 15px;
+                    width: 17px;
+                    opacity: 0.6;
+                    transition: 100ms ease-in;
+                    svg{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        &.clicked{
+                            display: none;
+                        }
+                    }
+                    &:hover{
+                        opacity: 1;
+                        transition: 100ms ease-in;
+                    }
+                }
+                .title{
+                    font-family: $lato;
+                    font-weight: 900;
+                    font-size: 22px;
+                    line-height: 28px;
+                    letter-spacing: 0.11em;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    margin-bottom: 10px;
+                }
+                .testimony{
+                    font-family: $inter;
+                    font-style: italic;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #FFFFFF;
+                    opacity: 0.54;
+                    margin-bottom: 10px;
+                }
+                .description{
+                    font-family: $inter;
+                    font-weight: 300;
+                    letter-spacing: 0.5px;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #FFFFFF;
+                }
+            }
+            .cta{
+                position: absolute;
+                max-width: 300px;
+                width: 100%;
+                right: 85px;
+                bottom: 23.5%;
+                z-index: 5;
+                border-radius: 24px;
+                background: white;
+
+                &::before{
+                    border-radius: 24px;
+                    position: absolute;
+                    content: "";
+                    inset: -1px;
+                    z-index: -2;
+                    background: linear-gradient(147.53deg, rgba(47, 123, 244, 0.4) 9.35%, rgba(47, 123, 244, 0) 130.08%),
+                    linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9));
+                }
+                .box{
+                    background-color: #FFFFFF;
+                    padding: 24px;
+                    border-radius: inherit;
+                    .cross{
+                        position: absolute;
+                        right: 15px;
+                        top: 15px;
+                        transition: 100ms ease-in;
+                        opacity: 0.6;
+                        width: 18px;
+                        height: 18px;
+                        @media(max-width: 767px){
+                            display: none;
+                        }
+                        svg{
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                        }
+                        &:hover{
+                            opacity: 1;
+                            transition: 100ms ease-in;
+                        }
+                    }
+                    .question{
+                        font-family: $inter;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 120%;
+                        color: #000000;
+                        margin-bottom: 4px;
+                    }
+                    .main-text{
+                        font-family: $inter;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 120%;
+                        color: #000000;
+                        margin-bottom: 24px;
+                    }    
+                }
+                .button{
+                    position: absolute;
+                    display: flex;
+                    transition: 300ms ease;
+                    padding: 14px 24px;
+                    background: linear-gradient(274.31deg, #4D44EF 5.99%, #3678E6 95.21%);
+                    border-radius: 50px;
+                    align-items: center;
+                    grid-gap: 8px;
+                    transform: translateX(-50%);
+                    left: 50%;
+                    width: max-content;
+                    bottom: -30px;
+                    .icon{
+                        width: 25px;
+                        height: 35px;
+                        position: relative;
+                        img{
+                            position: absolute;
+                            transform: translate(-50%, -50%);
+                            top: 50%;
+                            left: 50%;
+                        }
+                    }
+                    animation: btnEffectReverse 0.3s ;
+                    &:hover{
+                        animation: btnEffect 0.3s forwards;
+                    }
+                    .link{
+                        font-family: $inter;
+                        font-weight: 500;
+                        color: white;
+                        font-size: 16px;
+                        line-height: 22px;
+                    }
+                }
+            }
+        }
+    }
+}

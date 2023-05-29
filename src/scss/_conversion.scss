@@ -1,0 +1,130 @@
+@mixin conversion(){
+    .conversion{
+        .inner{
+            position: relative;
+            .stats{
+                margin-left: 90px;
+                text-transform: uppercase;
+                margin-bottom: 40px;
+                margin-top: 50px;
+                .top-text{
+                    margin-left: 55px;
+                    font-family: $lato;
+                    font-weight: 900;
+                    font-size: 40px;
+                    line-height: 80%;
+                    letter-spacing: 0.02em;
+                    background: linear-gradient(223.5deg, #1ACBF2 14.9%, #0E74F9 88.34%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    text-fill-color: transparent;
+                    mix-blend-mode: multiply;
+                    position: relative;
+                    z-index: 5;
+                }
+                .numbers{
+                    font-family: $lato;
+                    font-weight: 900;
+                    font-size: 270px;
+                    line-height: 80%;
+                    letter-spacing: 0.02em;
+                    background-image: linear-gradient(223.5deg, #4841D2 14.9%, #0E74F9 88.34%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    text-fill-color: transparent;
+                    mix-blend-mode: multiply;
+                }
+                .text{
+                    margin-left: 55px;
+                    font-family: $lato;
+                    font-weight: 900;
+                    font-size: 40px;
+                    line-height: 180%;
+                    letter-spacing: 0.02em;
+                    background-image: linear-gradient(185.73deg, #4841D2 9.97%, #0E74F9 113.54%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    text-fill-color: transparent;
+                    mix-blend-mode: multiply;
+                    position: relative;
+                    z-index: 5;
+                    white-space: nowrap;
+                    @media(max-width: 767px){
+                        white-space: normal;
+                    }
+                }
+            }
+            .cta{
+                margin-left: 225px;
+                z-index: 5;
+                margin-top: 40px;
+                padding: 24px;
+                background-color: rgba(255, 255, 255, 0.9);
+                border: 1px solid rgba(0, 0, 0, 0.24);
+                border-radius: 24px;
+                max-width: 396px;
+                width: 100%;
+                position: relative;
+                .title{
+                    font-family: $lato;
+                    font-weight: 900;
+                    font-size: 22px;
+                    line-height: 120%;
+                    letter-spacing: 0.11em;
+                    text-transform: uppercase;
+                    color: #000000;
+                    margin-bottom: 8px;
+                }
+                .description{
+                    margin-top: 8px;
+                    margin-bottom: 14px;
+                    font-family: $inter;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 120%;
+                    color: #000000;
+                }
+                .button{
+                    position: absolute;
+                    display: flex;
+                    transition: 300ms ease;
+                    padding: 14px 24px;
+                    background: linear-gradient(274.31deg, #4D44EF 5.99%, #3678E6 95.21%);
+                    border-radius: 50px;
+                    align-items: center;
+                    grid-gap: 8px;
+                    transform: translateX(-50%);
+                    left: 50%;
+                    width: max-content;
+                    bottom: -30px;
+                    z-index: 5;
+                    .icon{
+                        width: 25px;
+                        height: 35px;
+                        position: relative;
+                        img{
+                            position: absolute;
+                            transform: translate(-50%, -50%);
+                            top: 50%;
+                            left: 50%;
+                        }
+                    }
+                    animation: btnEffectReverse 0.3s forwards;
+                    &:hover{
+                        animation: btnEffect 0.3s forwards;
+                    }
+                    .link{
+                        font-family: $inter;
+                        font-weight: 500;
+                        color: white;
+                        font-size: 16px;
+                        line-height: 140%;
+                    }
+                }
+            }
+        }
+    }
+}

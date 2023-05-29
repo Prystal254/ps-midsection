@@ -1,1 +1,1 @@
-# ps-midsection
+# Stature_Victor_WordpressTemplate
