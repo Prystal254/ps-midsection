@@ -1,5 +1,11 @@
 .about-us{
     padding: 0 30px;
+    position: relative;
+    z-index: 15;
+    min-height: 100vh;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
     .about-us-container{
         max-width: 800px;
         margin: 0 auto;
@@ -31,7 +37,7 @@
                         margin-bottom: 25px;
                         .tabs-inner{
                             img{
-
+                                margin-right: 8px;
                             }
                         }
                     }
@@ -71,6 +77,8 @@
             .demo{
                 width: 50%;
                 .demo-container{
+                    background-repeat: no-repeat !important;
+                    background-size: cover !important;
                     height: 100%;
                     position: relative;
                     border-radius: 20px;
