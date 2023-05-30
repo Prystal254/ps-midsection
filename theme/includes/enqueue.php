@@ -41,7 +41,14 @@
 			[
 				"name" => 'gsap.js', 
 				"type" => 'js',
-				"path" => 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js',
+				"path" => 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js',
+				"version" => '1.0.0',
+				"loadInFooter" => false
+			],
+			[
+				"name" => 'scrollTrigger.js', 
+				"type" => 'js',
+				"path" => 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js',
 				"version" => '1.0.0',
 				"loadInFooter" => false
 			]
