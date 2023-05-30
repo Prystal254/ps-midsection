@@ -25,3 +25,16 @@ gsap.utils.toArray(".mid-section .sub-section").forEach(section => {
     }
     
 })
+
+$(document).on("scroll", function(e){
+    var scroller = $(window).scrollTop();
+    
+    if(scroller >= ($(".banner .right-col-inner").offset().top - 40)){
+        console.log("niggah");
+        $(".banner .right-col-inner").addClass("sticky");
+    }
+    else{
+        console.log("niggah x2")
+        $(".banner .right-col-inner").removeClass("sticky");
+    }
+})

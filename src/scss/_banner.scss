@@ -72,6 +72,16 @@
             .right-col{
                 width: 60%;
                 .right-col-inner{
+                    &.sticky{
+                        padding-bottom:50px;
+                        .animated-text{
+                            position:fixed;
+                            top:30px;
+                            text-align: center;
+                            left:0;
+                            right:0;
+                        }
+                    }
                     .animated-text{
                         margin-bottom: 10px;
                         h4{
