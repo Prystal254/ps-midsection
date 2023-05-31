@@ -79,6 +79,30 @@
                     "layout": "block",
                     "sub_fields": [
                         {
+                            "key": "field_64766aafdea39",
+                            "label": "Background Image",
+                            "name": "background_image",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
                             "key": "field_6473dd0766aa4",
                             "label": "Stats",
                             "name": "stats",
@@ -378,6 +402,30 @@
                     },
                     "layout": "block",
                     "sub_fields": [
+                        {
+                            "key": "field_64766ac2dea3a",
+                            "label": "Background Image",
+                            "name": "background_image",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
                         {
                             "key": "field_6473df3a0b5c2",
                             "label": "Stats",
@@ -896,5 +944,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1685395266
+    "modified": 1685482203
 }

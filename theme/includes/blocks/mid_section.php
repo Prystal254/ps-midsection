@@ -5,19 +5,20 @@
 ?>
 
 <div class="mid-section">
-    <div class="backgrounds">
+    <!-- <div class="backgrounds">
         <?php $i = 1;?>
         <?php foreach($block["backgrounds"] as $bg){?>
             <img class="section-bg section-bg-<?php echo $i;?>" src="<?php echo $bg?>" alt="">   
             <?php $i++;?> 
         <?php } ?>
         <?php $i = 1;?>    
-    </div>
+    </div> -->
     <div class="model">
         <video autoplay loop muted src="<?php echo $block["model"]?>"></video>
     </div>
-    <div class="sub-sections">
-        <div class="sub-section returns">
+    <div class="sub-sections" >
+        
+        <div class="sub-section returns" style="background-image:url('<?php echo $returns['background_image']['url']; ?>')">
             <div class="inner">
                 <div class="stats">
                     <div class="top-text"><?php echo $returns["stats"]["top_text"];?></div>
@@ -51,7 +52,7 @@
                 </div>
             </div>
         </div>
-        <div class="sub-section conversion">
+        <div class="sub-section conversion " style="background-image:url('<?php echo $conversion['background_image']['url']; ?>" >
             <div class="inner">
                 <div class="stats">
                     <div class="top-text"><?php echo $conversion["stats"]["top_text"];?></div>

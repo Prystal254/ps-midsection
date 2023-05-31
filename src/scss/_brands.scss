@@ -11,6 +11,7 @@
                 max-width: 890px;
                 position: relative;
                 padding: 15px;
+                margin-bottom:80px;
                 .dots{
                     display: flex;
                     justify-content: flex-end;
@@ -132,7 +133,7 @@
                 font-family: $lato;
                 font-weight: 900;
                 font-size: 330px;
-                line-height: 120%;
+                line-height: 80%;
                 letter-spacing: 0.02em;
                 text-transform: uppercase;
                 background: linear-gradient(223.5deg, #1BB7F3 14.9%, #2B5BE6 88.34%);
@@ -142,19 +143,20 @@
                 text-fill-color: transparent;
                 mix-blend-mode: multiply;
                 text-align: center;
+                transform-origin:top;
             }
         }
         .stat-marquee{
             display: flex;
             width: 100%;
-            overflow: hidden;
+            //overflow: hidden;
             position: absolute;
             left: 0;
             grid-gap: 200px;
             top: 560px;
             .marquee-item{
-                animation: slide 40s infinite;
-                animation-timing-function: linear;
+                // animation: slide 40s infinite;
+                // animation-timing-function: linear;
                 font-family: $lato;
                 font-weight: 900;
                 font-size: 55px;

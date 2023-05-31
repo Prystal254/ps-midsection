@@ -2,9 +2,10 @@
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
+    background-color:#fff;
     padding: 0 30px;
     position: relative;
-    z-index: 15;
+    z-index: 11;
     background-position: center;
     display: flex;
     align-items: center;
@@ -73,13 +74,36 @@
                 width: 60%;
                 .right-col-inner{
                     &.sticky{
-                        padding-bottom:50px;
+                        padding-top:61px;
                         .animated-text{
                             position:fixed;
                             top:30px;
                             text-align: center;
                             left:0;
                             right:0;
+                            z-index:11;
+                            margin-bottom:0;
+                        }
+                    }
+                    &.black{
+                        .animated-text{
+                            h4{
+                                color:#000;
+                               
+                            }
+                        }
+                    }
+                    &.background-enabled{
+                        .animated-text{
+                            h4{
+                                background:url("../../../../wp-content/uploads/2023/05/Frame-43.png");
+                                background-size:contain;
+                                background-position:center center;
+                                transform:scale(2);
+                                background-clip:text;
+                                color:transparent;
+                                -webkit-background-clip: text;
+                            }
                         }
                     }
                     .animated-text{
@@ -92,6 +116,7 @@
                             line-height: 51px;
                             letter-spacing: 0.01em;
                             color: #FFFFFF;
+                            transition:all .3s ease;
                         }
                     }
                     .banner-text{
@@ -190,5 +215,16 @@
                 top: 10px;
             }
         }
+    }
+    .made-for-shopify{
+        position:fixed;
+        left:0;
+        top:50%;
+        transform:translateY(-50%);
+        background:#fff;
+        padding:8px 12px;
+        padding-left:20px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+        border-radius: 0px 8px 8px 0px;
     }
 }

@@ -5,9 +5,10 @@
             height: 100%;
             .stats{
                 margin-left: 90px;
+                opacity:0;
                 text-transform: uppercase;
                 padding-top: 50px;
-                transition:opacity 2s ease;
+                //transition:opacity 2s ease;
                 .top-text{
                     font-family: $lato;
                     font-weight: 900;
@@ -63,7 +64,7 @@
                 border: 1px solid rgba(255, 255, 255, 0.4);
                 border-radius: 24px;
                 background: rgba(31, 31, 31, 0.9);
-                transition: opacity 2s ease;
+                //transition: opacity 2s ease;
                 @media(max-width: 767px){
                     top: 370px;
                 }
