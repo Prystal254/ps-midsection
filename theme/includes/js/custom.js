@@ -2,6 +2,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 gsap.utils.toArray(".mid-section .sub-section").forEach(section => {
     console.log(section.offsetWidth)
+    //scroll trigger for each of the subsections within middle section
     let tl = gsap.timeline({
         scrollTrigger:{
             trigger: section,
@@ -16,6 +17,7 @@ gsap.utils.toArray(".mid-section .sub-section").forEach(section => {
         defaults:{ ease : "linear" , stagger: 0.2},
         
     })
+    // timeline for the middle section 
     if(section.classList.contains("returns")){
         tl.to(section.querySelector(".stats"), {opacity:1, duration:1} );
         tl.to(section.querySelector(".stats"), {opacity:0, duration:1, delay:3}, ">");
@@ -48,7 +50,7 @@ gsap.utils.toArray(".mid-section .sub-section").forEach(section => {
     }
     
 })
-
+// this is for the header - logo scroll
 $(document).on("scroll", function(e){
     var scroller = $(window).scrollTop();
     
