@@ -9,6 +9,7 @@
                                 <img src="<?php echo $block['banner_gif']; ?>" alt="">
                             </div>
                         </div>
+                        <div class="heading-m"><?php echo $block['title'];?></div>
                         <div class="gif-text">
                             <p><?php echo $block['gif_text']; ?></p>
                         </div>
@@ -25,6 +26,9 @@
                                     <img class="rating" src="<?php echo "/wp-content/uploads/2023/05/Union-4.png"; ?>" alt=""><span>(1000)</span>
                                 <?php } ?>
                         </div>
+                    </div>
+                    <div class="banner-button-m">
+                        <a href="<?php echo $block['banner_button']['url']; ?>"><span><img src="<?php echo "/wp-content/uploads/2023/05/👋.png"; ?>" alt=""></span><?php echo $block['banner_button']['title']; ?></a>
                     </div>
                 </div>
             </div>

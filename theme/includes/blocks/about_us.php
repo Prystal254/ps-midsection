@@ -1,5 +1,6 @@
 <section class="about-us">
     <div class="about-us-container">
+        <h2 class="heading-m">Prince St.</h2>
         <div class="about-us-top">
             <div class="ship-to">
                 <div class="ship-to-container">

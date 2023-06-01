@@ -12,6 +12,14 @@
                 position: relative;
                 padding: 15px;
                 margin-bottom:80px;
+                @media(max-width: 767px){
+                    margin-bottom:50px;
+                }
+                @media(max-width: 567px){
+                    padding: 12px;
+                    width: calc(100% + 100px);
+                    left: -230px;
+                }
                 .dots{
                     display: flex;
                     justify-content: flex-end;
@@ -23,14 +31,15 @@
                     width: 100%;
                     border-radius: 24px;
                     overflow: hidden;
-                    @media(max-width: 567px){
+                    @media(max-width: 767px){
                         border-radius: 0px;
+                        height: 340px;
                     }
                     img{
                         position: absolute;
                         top: 0;
                         left: 0;
-                        @media(max-width: 567px){
+                        @media(max-width: 767px){
                             left: auto;
                             right: 0;
                             scale: 1.1;
@@ -73,6 +82,12 @@
                 left: -15px;
                 top: 200px;
                 z-index: 5;
+                @media(max-width: 767px){
+                    top: auto;
+                    bottom: -240px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
                 .title{
                     font-family: $lato;
                     font-weight: 900;
@@ -144,6 +159,17 @@
                 mix-blend-mode: multiply;
                 text-align: center;
                 transform-origin:top;
+                @media(max-width: 991px){
+                    font-size: 260px;
+                }
+                @media(max-width: 767px){
+                    font-size: 180px;
+                }
+                @media(max-width: 767px){
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
             }
         }
         .stat-marquee{
@@ -154,6 +180,9 @@
             left: 0;
             grid-gap: 200px;
             top: 560px;
+            @media(max-width: 767px){
+                top: 505px;
+            }
             .marquee-item{
                 // animation: slide 40s infinite;
                 // animation-timing-function: linear;
@@ -170,6 +199,9 @@
                 text-fill-color: transparent;
                 mix-blend-mode: multiply;
                 white-space: nowrap;
+                @media(max-width: 767px){
+                    font-size: 45px;
+                }
             }
         }
     }

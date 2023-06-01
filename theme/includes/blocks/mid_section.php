@@ -97,9 +97,6 @@
                         </svg>
                     </div>
                     <div class="screen-wrap">
-                        <!-- i know you told me to put this as a static image but i just couldn't
-                        help but think that this is going to be changed later so i made it that
-                        PS. it wont bother you. -->
                         <?php 
                         $i = 1;
                         foreach($brands["bg_gallery"] as $bg){?>
