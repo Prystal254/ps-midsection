@@ -6,7 +6,9 @@
                     <div class="card">
                         <div class="gif-container">
                             <div class="gif">
-                                <img src="<?php echo $block['banner_gif']; ?>" alt="">
+                                <video autoplay loop muted >
+                                    <source src="<?php echo $block["banner_gif"]?>" type="video/webm">
+                                </video>
                             </div>
                         </div>
                         <div class="heading-m"><?php echo $block['title'];?></div>

@@ -27,6 +27,9 @@
         pointer-events: none;
         video{
             height: 100%;
+            &.multiple{
+                display:none;
+            }
         }
     }
     .sub-sections{

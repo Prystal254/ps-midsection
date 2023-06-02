@@ -35,8 +35,8 @@ gsap.utils.toArray(".mid-section .sub-section").forEach(section => {
                 tl.to(section.querySelector(".cta"), { yPercent:-100, opacity:0, duration:1 , delay:3}, ">");
             }
             else if(section.classList.contains("conversion")){
-                tl.to(section.querySelector(".stats"), {opacity:1, duration:0.5} );
-                tl.to(section.querySelector(".stats"), {opacity:0, duration:0.5, delay:3}, ">");
+                tl.to(section.querySelector(".stats"), {opacity:1, duration:1} );
+                tl.to(section.querySelector(".stats"), {opacity:0, duration:1, delay:3}, ">");
                 
                 gsap.set(section.querySelector(".cta"), {xPercent:-100, opacity:0});
                 tl.to(section.querySelector(".cta"), { xPercent:0, opacity:1, duration:1}, "0");
@@ -44,7 +44,7 @@ gsap.utils.toArray(".mid-section .sub-section").forEach(section => {
             }
             else if(section.classList.contains("brands")){
                 gsap.set(section.querySelector(".cta"), {xPercent:-100, opacity:0});
-                tl.to(section.querySelector(".cta"), { xPercent:0, opacity:1, duration:0.5}, "0");
+                tl.to(section.querySelector(".cta"), { xPercent:0, opacity:1, duration:1}, "0");
                 tl.to(section.querySelector(".cta"), { xPercent:-100, opacity:0, duration:2 , delay:5}, ">");
         
                 tl.to(section.querySelector(".stat-marquee "), {xPercent:-80, duration:4}, "0")
@@ -116,7 +116,7 @@ gsap.utils.toArray(".mid-section .sub-section").forEach(section => {
 
 
 
-
+var run_once = false;
 // this is for the header - logo scroll
 $(document).on("scroll", function(e){
     var scroller = $(window).scrollTop();
@@ -140,5 +140,24 @@ $(document).on("scroll", function(e){
     }
     else{
         $(".banner .right-col-inner").removeClass("background-enabled");
+    }
+    if(scroller >= $(".sub-section.brands").offset().top){
+        if(run_once == false){
+            $(".mid-section .model video.single").hide();
+            $(".mid-section .model video.multiple")[0].currentTime = 0;
+            $(".mid-section .model video.multiple")[0].play();
+            $(".mid-section .model video.multiple").fadeIn();
+            return run_once = true;
+        }
+        
+    }
+    else{
+        if(run_once == true){
+            $(".mid-section .model video.multiple").hide();
+            $(".mid-section .model video.single").fadeIn();
+            
+           return run_once = false;
+
+        }
     }
 })

@@ -100,9 +100,9 @@
         },
         {
             "key": "field_647510671ebeb",
-            "label": "Banner Gif",
+            "label": "Banner Video",
             "name": "banner_gif",
-            "type": "image",
+            "type": "url",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -111,16 +111,8 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "url",
-            "preview_size": "medium",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": ""
+            "default_value": "",
+            "placeholder": ""
         },
         {
             "key": "field_6475107a1ebec",
@@ -177,7 +169,7 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": true,
+    "active": 1,
     "description": "",
-    "modified": 1685402488
+    "modified": 1685645471
 }

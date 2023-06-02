@@ -14,7 +14,12 @@
         <?php $i = 1;?>    
     </div> -->
     <div class="model">
-        <video autoplay loop muted src="<?php echo $block["model"]?>"></video>
+        <video autoplay loop muted class="single" >
+            <source src="<?php echo $block["model"]?>" type="video/webm">
+        </video>
+        <video autoplay loop muted class="multiple" >
+            <source src="<?php echo $block["model_brands"]?>" type="video/webm">
+        </video>
     </div>
     <div class="sub-sections" >
         
@@ -97,14 +102,15 @@
                         </svg>
                     </div>
                     <div class="screen-wrap">
-                        <?php 
-                        $i = 1;
-                        foreach($brands["bg_gallery"] as $bg){?>
-                            <img src="<?php echo $bg?>" alt="" class="brand-bg brand-bg<?php echo $i;?>">    
-                        <?php 
-                        $i++;    
-                        } 
-                        $i = 1;?>
+                        <!-- <?php 
+                            $i = 1;
+                                foreach($brands["bg_gallery"] as $bg){?>
+                                    <img src="<?php echo $bg?>" alt="" class="brand-bg brand-bg<?php echo $i;?>">    
+                                <?php 
+                                $i++;    
+                            } 
+                        $i = 1;?> -->
+                        <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/829622639?h=34018fc0a7&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;loop=1&amp;autoplay=1&amp;background=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="AvenueD Videos"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
                     </div>
                 </div>
                 <div class="cta">
