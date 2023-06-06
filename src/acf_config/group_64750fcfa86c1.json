@@ -115,6 +115,22 @@
             "placeholder": ""
         },
         {
+            "key": "field_647e87b9de58a",
+            "label": "Banner Video (MOV)",
+            "name": "banner_gif_mov",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
             "key": "field_6475107a1ebec",
             "label": "Gif text",
             "name": "gif_text",
@@ -171,5 +187,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1685645471
+    "modified": 1686014004
 }
