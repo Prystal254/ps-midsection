@@ -16,7 +16,7 @@
     <link rel="manifest" href="<?php echo get_stylesheet_directory_uri(); ?>/social/site.webmanifest">
     <link rel="mask-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/social/safari-pinned-tab.svg" color="#000000">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">  
     
     <?php wp_head();?>    
     <meta name="author" content="<?php bloginfo('name'); ?>" />
@@ -45,7 +45,7 @@
           <div class="box-btn">
               <div href="#" class="process" >
                 <img src="/wp-content/uploads/2023/06/🤖.png" alt=""> 
-                <p>Processing...</p>
+                <p>Processing <img src="<?php echo '/wp-content/uploads/2023/06/Ellipsis-1.6s-200px.gif'; ?>" alt=""></p>
               </div>
               <div class="preview">
                 <img src="/wp-content/uploads/2023/06/Frame-7.png" alt="">

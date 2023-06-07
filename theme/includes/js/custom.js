@@ -170,6 +170,7 @@ $(document).ready(function(){
 
     $(".preview").click(function(){
         $(".preload").css("display","none");  
+        $(".all").addClass("active")
     });
     
 })

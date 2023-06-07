@@ -247,6 +247,12 @@
                             font-size: 16px;
                             line-height: 22px;
                             color: #fff;
+                            display: flex;
+                            img{
+                                width: 20px;
+                                position: relative;
+                                top: 5px;
+                            }
                         }
                     }
                     .preview{
