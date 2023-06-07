@@ -44,11 +44,13 @@
           <span>If things take a minute, please sit tight. Loading times in production will be around around 5s.</span>
           <div class="box-btn">
               <div href="#" class="process" >
-                <img src="/wp-content/uploads/2023/06/🤖.png" alt=""> 
-                <p>Processing <img src="<?php echo '/wp-content/uploads/2023/06/Ellipsis-1.6s-200px.gif'; ?>" alt=""></p>
+                🤖
+                <p>Processing </p>
               </div>
               <div class="preview">
-                <img src="/wp-content/uploads/2023/06/Frame-7.png" alt="">
+                <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3.47473 19.1579C2.14161 19.9019 0.5 18.9382 0.5 17.4115V2.40671C0.5 0.879999 2.14161 -0.083753 3.47473 0.660316L16.9165 8.1627C18.2835 8.92569 18.2835 10.8925 16.9165 11.6555L3.47473 19.1579Z" fill="white"/>
+                </svg>
               </div>
           </div>
         </div>
