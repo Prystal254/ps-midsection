@@ -154,6 +154,10 @@
                             -webkit-text-fill-color: transparent;
                             background-clip: text;
                             text-fill-color: transparent;
+                            @media(max-width:575px){
+                                padding: 0px 15px;
+                                font-size: 38px;
+                            }
                         }
                     }
                     .button{

@@ -8,11 +8,11 @@
                             <div class="gif">
                                 <video autoplay loop muted >
                                     <source src="<?php echo $block["banner_gif_mov"]?>" type='video/mp4; codecs="hvc1"'>
-                                    <source src="<?php echo $block["banner_gif"]?>" type="video/webm">                                   
+                                    <source src="<?php echo $block["banner_gif"] ?>" type="video/webm">                                   
                                 </video>
                             </div>
                         </div>
-                        <div class="heading-m"><?php echo $block['title'];?></div>
+                        <div class="heading-m"><?php echo $block['title']; ?></div>
                         <div class="gif-text">
                             <p><?php echo $block['gif_text']; ?></p>
                         </div>

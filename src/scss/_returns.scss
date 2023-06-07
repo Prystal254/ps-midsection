@@ -51,11 +51,17 @@
                     background-clip: text;
                     text-fill-color: transparent;
                     mix-blend-mode: multiply;
+                    @media(max-width: 1280px){
+                        font-size: 240px;
+                    }
                     @media(max-width: 991px){
                         font-size: 230px;
                     }
+                    @media(max-width: 775px){
+                        font-size: 190px;
+                    }
                     @media(max-width: 567px){
-                        font-size: 180px;
+                        font-size: 170px;
                     }
                     @media(max-width: 350px){
                         font-size: 150px;
@@ -265,5 +271,55 @@
                 }
             }
         }
+        .banner-bottom-link{
+            position: absolute;
+            bottom: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            @media(max-width:1280px){
+                bottom: 25px;
+            }
+            @media(max-width:575px){
+                width: 70%;
+                bottom: 5px;
+                flex-direction: column;
+            }
+            p{
+                font-family: $inter;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 24px;
+                text-align: center;
+                color: #3678E6;
+                margin-left: 5px;
+                white-space: nowrap;
+                @media(max-width:775px){
+                    color: #4C46EF;
+                }
+                @media(max-width:575px){
+                    font-size: 16px;
+                    white-space: unset;
+                    line-height: 19px;
+                }
+            }
+            img{
+                position: relative;
+                animation: ani 2s infinite ease-in-out;
+                cursor: pointer;
+            }
+            @keyframes ani{
+                from{
+                    top : -5px;
+                }
+                to{
+                    top: 10px;
+                }
+            }
+        }
     }
 }
+

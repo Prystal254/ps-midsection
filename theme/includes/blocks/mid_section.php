@@ -58,6 +58,10 @@
                     </div>
                 </div>
             </div>
+            <div class="banner-bottom-link">
+                <p>Raise your conversion by a whole dimension.</p>
+                <img src="<?php echo "/wp-content/uploads/2023/05/👇.png" ?>" alt="">
+            </div>
         </div>
         <div class="sub-section conversion " style="background-image:url('<?php echo $conversion['background_image']['url']; ?>" >
             <div class="inner">
@@ -80,6 +84,10 @@
                         <div class="link"><?php echo $conversion["cta_box"]["button"]["link"]["title"];?></div>
                     </a>
                 </div>
+            </div>
+            <div class="banner-bottom-link">
+                <p>Brand value through the virtual roof.</p>
+                <img src="<?php echo "/wp-content/uploads/2023/05/👇.png" ?>" alt="">
             </div>
         </div>
         <div class="sub-section brands">
@@ -137,6 +145,11 @@
                 <?php for ($i=0; $i < 11; $i++) { ?>
                     <div class="marquee-item gradient-text"><?php echo $brands["stats"]["text"]?></div>    
                 <?php } ?>
+            </div>
+            <div class="banner-bottom-link">
+                <p>More about our service.</p>
+                <img src="<?php echo "/wp-content/uploads/2023/06/Vector-15.png" ?>" class="desktop" alt="">
+                <img src="<?php echo '/wp-content/uploads/2023/06/Vector-15-1.png'; ?>" class="mobile" alt="">
             </div>
         </div>
     </div>

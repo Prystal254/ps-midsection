@@ -161,3 +161,15 @@ $(document).on("scroll", function(e){
         }
     }
 })
+ 
+$(document).ready(function(){ 
+    setTimeout(function(){
+        $(".process").css("display","none");
+        $(".preview").css("display","flex");  
+    }, 5000);
+
+    $(".preview").click(function(){
+        $(".preload").css("display","none");  
+    });
+    
+})
