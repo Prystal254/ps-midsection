@@ -25,7 +25,7 @@
     </div>
     <div class="sub-sections" >
         
-        <div class="sub-section returns" style="background-image:url('<?php echo $returns['background_image']['url']; ?>')">
+        <div class="sub-section returns" style="background-image:url('')">
             <div class="inner">
                 <div class="stats">
                     <div class="top-text"><?php echo $returns["stats"]["top_text"];?></div>
@@ -70,7 +70,7 @@
                 <img src="<?php echo "/wp-content/uploads/2023/05/👇.png" ?>" alt="">
             </div>
         </div>
-        <div class="sub-section conversion " style="background-image:url('<?php echo $conversion['background_image']['url']; ?>" >
+        <div class="sub-section conversion " style="" >
             <div class="inner">
                 <div class="stats">
                     <div class="top-text"><?php echo $conversion["stats"]["top_text"];?></div>
@@ -175,3 +175,7 @@
         } ?>
     </div>
 </div>
+<script>
+    let backgrounds = ["<?php echo $returns['background_image']['url']; ?>", "<?php echo $conversion['background_image']['url']; ?>"];
+    // console.log(backgrounds);
+</script>

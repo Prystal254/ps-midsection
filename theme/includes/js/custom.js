@@ -123,7 +123,24 @@ var run_once = false;
 // this is for the header - logo scroll
 $(document).on("scroll", function(e){
     var scroller = $(window).scrollTop();
-    
+//--------------------
+
+    if((scroller >= $(".returns").offset().top) && (scroller < ($(".conversion").offset().top - 400))){
+        $(".model").css("background-image", `unset`);
+        $(".model").css("background-image", `url("${backgrounds[0]}")`);
+        $(".model").removeClass("top");
+    }   
+    else if((scroller >= $(".conversion").offset().top) && (scroller < ($(".brands").offset().top - 400))){
+        $(".model").css("background-image", `unset`);
+        $(".model").css("background-image", `url("${backgrounds[1]}")`);
+        $(".model").removeClass("top");
+    }   
+    else{
+        $(".model").css("background-image", `unset`);
+        $(".model").addClass("top");
+    }
+
+//--------------------
     if(scroller >= ($(".banner .right-col-inner").offset().top - 40)){
         $(".banner .right-col-inner").addClass("sticky");
     }
