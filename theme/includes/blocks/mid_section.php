@@ -58,6 +58,13 @@
                     </div>
                 </div>
             </div>
+            <div class="tab_img">
+                <?php foreach($returns['tab_img'] as $tab){ ?>
+                    <div class="image">
+                        <img src="<?php echo $tab['image']['url']; ?>" alt="">
+                    </div>
+                <?php } ?>
+            </div>
             <div class="banner-bottom-link">
                 <p>Raise your conversion by a whole dimension.</p>
                 <img src="<?php echo "/wp-content/uploads/2023/05/👇.png" ?>" alt="">
@@ -111,7 +118,7 @@
                             <path opacity="0.4" d="M56.1 1C49.488 1 43.142 3.95058 39 8.61322C34.858 3.95058 28.512 1 21.9 1C10.196 1 1 9.81531 1 21.0348C1 34.8042 13.92 46.0237 33.49 63.0714L39 67.8434L44.51 63.035C64.08 46.0237 77 34.8042 77 21.0348C77 9.81531 67.804 1 56.1 1Z" stroke="black"/>
                         </svg>
                     </div>
-                    <div class="screen-wrap">
+                    <div class="screen-wrap single-item">
                         <!-- <?php 
                             $i = 1;
                                 foreach($brands["bg_gallery"] as $bg){?>
@@ -120,9 +127,11 @@
                                 $i++;    
                             } 
                         $i = 1;?> -->
-                        <video autoplay loop muted >
-                            <source src="<?php echo $brands['video']?>" type='video/mp4'>
-                        </video>    
+                        <?php foreach($brands['videos'] as $bg){?>
+                            <video autoplay loop muted id="myvideo">
+                                <source src="<?php echo $bg['video_url']?>" type='video/mp4'>
+                            </video>
+                        <?php } ?>    
                     </div>
                 </div>
                 <div class="cta">
