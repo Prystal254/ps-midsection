@@ -23,7 +23,33 @@
                 .dots{
                     display: flex;
                     justify-content: flex-end;
-                    margin-bottom: 15px;
+                    margin-bottom: 15px; 
+                    width: 100%; 
+                    .slick-dots{
+                        width:30%;
+                        display: flex;
+                        position: absolute;
+                        top: 20px;
+                        left : 50%;
+                        transform: translateX(-50%);
+                        @media(max-width:775px){
+                            width: 50%;
+                        }
+                        li{
+                            background-color: white;
+                            height: 6px; 
+                            width: 100%;
+                            display: block;
+                            margin-right: 5px;
+                            border-radius: 5px;
+                            border: 1px solid gray;
+                            .inProgress {
+                                background-color: gray;
+                                width: 0%;
+                                height: 4px; 
+                            }
+                        } 
+                    }
                 }
                 .screen-wrap{
                     position: relative;
@@ -103,6 +129,12 @@
                     bottom: -240px;
                     left: 50%;
                     transform: translateX(-50%);
+                }
+                @media(max-width:567px){
+                    left: 15%; 
+                }
+                @media(max-width: 420px){ 
+                    left: 0%; 
                 }
                 .title{
                     font-family: $lato;

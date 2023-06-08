@@ -179,3 +179,69 @@ $(document).ready(function(){
     });
     
 })
+
+
+$('.screen-wrap').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    Infinity:true,
+    dots: true, 
+    arrows:false,
+    autoplay:true,
+    speed: 800,
+    autoplaySpeed: 8000,
+    draggable:false,
+    appendDots:$('.brands .dots')
+  })
+ 
+
+//ticking machine
+var percentTime;
+var tick;
+var time = .8;
+var progressBarIndex = 0;
+
+$('.slick-dots li').each(function(index) {
+    var progress = "<div class='inProgress inProgress" + index + "'></div>";
+    $(this).html(progress); 
+});
+
+function startProgressbar() {
+    resetProgressbar();
+    percentTime = 0;
+    tick = setInterval(interval, 10);
+}
+
+function interval() {
+    if (($('.slider .slick-track div[data-slick-index="' + progressBarIndex + '"]').attr("aria-hidden")) === "true") {
+        progressBarIndex = $('.slider .slick-track div[aria-hidden="false"]').data("slick-index");
+        progressbar = $(".slick-dots li").length(); 
+        startProgressbar();
+    } else {
+        percentTime += 1 / (time + 5);
+        $('.inProgress' + progressBarIndex).css({
+            width: percentTime + "%"
+        });
+        if(percentTime >= 100) {
+            $('.single-item').slick('slickNext');
+            progressBarIndex++;
+            if (progressBarIndex > 4) {
+                progressBarIndex = 0;
+            }
+            startProgressbar();
+        }
+    }
+}
+
+function resetProgressbar() { 
+    $('.inProgress').css({
+        width: 0 + '%'
+    }); 
+    clearInterval(tick);
+}
+
+startProgressbar(); 
+// End ticking machine
+
+
+   

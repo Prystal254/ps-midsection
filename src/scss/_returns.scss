@@ -104,16 +104,20 @@
                 border-radius: 24px;
                 background: rgba(31, 31, 31, 0.9);
                 //transition: opacity 2s ease;
+                @media(max-width:991px){
+                    top: 45%;
+                }
                 @media(max-width: 767px){
                     left: 50%;
                     transform: translateX(calc(-50% - 80px));
                 }
-                @media(max-width: 567px){
+                @media(max-width: 567px){ 
+                    left: 20%;
                     transform: translateX(calc(-50% - 20px));
                 }
-                // @media(max-width:767px){
-                //     position: static;
-                // }
+                @media(max-width: 420px){
+                    left: 0%;
+                }
                 .heart{
                     position: absolute;
                     cursor: pointer;
@@ -174,12 +178,20 @@
                 z-index: 5;
                 border-radius: 24px;
                 background: white;
+                @media(max-width:991px){
+                    bottom: 25.5%;
+                }
                 @media(max-width: 767px){
                     left: 50%;
                     transform: translateX(calc(-50% + 80px));
                 }
-                @media(max-width: 567px){
+                @media(max-width: 567px){ 
+                    left: 20%;
+                    bottom: 26.5%;
                     transform: translateX(calc(-50% + 20px));
+                }
+                @media(max-width: 420px){
+                    left: 5%; 
                 }
                 &::before{
                     border-radius: 24px;
@@ -268,6 +280,22 @@
                         font-size: 16px;
                         line-height: 22px;
                     }
+                }
+            }
+        }
+        .tab_img{
+            position: absolute; 
+            bottom: 150px;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: center; 
+            max-width: 350px;
+            margin: 0 auto;
+            .image{
+                margin-right: 10px;
+                img{
+                    width: 100%;
                 }
             }
         }
