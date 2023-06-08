@@ -6,8 +6,8 @@
                     <div class="card">
                         <div class="gif-container">
                             <div class="gif">
-                                <video autoplay loop muted >
-                                    <source src="<?php echo $block["banner_gif_mov"]?>" type='video/mp4; codecs="hvc1"' >
+                                <video autoplay loop muted playsinline>
+                                    <source src="<?php echo $block["banner_gif_mov"]?>" type='video/quicktime' >
                                     <source src="<?php echo $block["banner_gif"] ?>" type="video/webm">                                   
                                 </video>
                             </div>

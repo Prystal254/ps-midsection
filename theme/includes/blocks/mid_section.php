@@ -14,12 +14,12 @@
         <?php $i = 1;?>    
     </div> -->
     <div class="model">
-        <video autoplay loop muted class="single" >
-            <source src="<?php echo $block["model_mov"]?>" type='video/mp4; codecs="hvc1"'>
+        <video autoplay loop muted class="single" playsinline >
+            <source src="<?php echo $block["model_mov"]?>" type='video/quicktime'>
             <source src="<?php echo $block["model"]?>" type="video/webm">
         </video>
-        <video autoplay loop muted class="multiple" >
-            <source src="<?php echo $block["model_brands_mov"]?>" type='video/mp4; codecs="hvc1"'>
+        <video autoplay loop muted class="multiple" playsinline >
+            <source src="<?php echo $block["model_brands_mov"]?>" type='video/quicktime'>
             <source src="<?php echo $block["model_brands"]?>" type="video/webm">
         </video>
     </div>
