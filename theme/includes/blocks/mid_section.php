@@ -177,5 +177,4 @@
 </div>
 <script>
     let backgrounds = ["<?php echo $returns['background_image']['url']; ?>", "<?php echo $conversion['background_image']['url']; ?>"];
-    // console.log(backgrounds);
 </script>

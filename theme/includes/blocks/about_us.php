@@ -42,6 +42,9 @@
                 </div>
             </div>
         </div>
+        <div class="animated-text-m">
+            <h4>Prince St.</h4>
+        </div>
         <div class="about-us-bottom">
             <div class="about-us-bottom-container">
                 <p><?php echo $block['about_us_text']; ?></p>

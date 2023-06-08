@@ -194,6 +194,29 @@
                 }
             }
         }
+        .animated-text-m{
+            h4{
+                margin-top: 50px;
+                font-family: 'Inter';
+                font-weight: 700;
+                font-size: 43px;
+                line-height: 125%;
+                letter-spacing: 0.01em;
+                background:url("../../../../wp-content/uploads/2023/05/Frame-43.png");
+                background-size:contain;
+                background-position:center center;
+                transform:scale(2);
+                background-clip:text;
+                text-align: center;
+                transform-origin: center;
+                color:transparent;
+                -webkit-background-clip: text;
+                display: none;
+                @media(max-width: 767px){
+                    display: block;
+                }
+            }
+        }
         .about-us-bottom{
             margin-top: 60px;
             .about-us-bottom-container{
