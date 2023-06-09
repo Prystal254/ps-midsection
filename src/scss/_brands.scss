@@ -133,7 +133,7 @@
                 @media(max-width:567px){
                     left: 15%; 
                 }
-                @media(max-width: 420px){ 
+                @media(max-width: 450px){ 
                     left: 0%; 
                 }
                 .title{
@@ -230,6 +230,12 @@
             top: 560px;
             @media(max-width: 767px){
                 top: 505px;
+            }
+            @media(max-width: 567px){
+                top: 420px;
+            }
+            @media(max-width: 400px){
+                top: 400px;
             }
             .marquee-item{
                 // animation: slide 40s infinite;

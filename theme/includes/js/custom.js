@@ -17,9 +17,8 @@ function initScrollTrigger(){
                         end: () => "+=1400",
                         scrub: true,
                         pin :true,
-                        anticipatePin: 1,
-            
-                        markers:true,
+                        anticipatePin: 1, 
+                        markers:false,
                     },
                     defaults:{ ease : "linear" , stagger: 0.2},
                     
@@ -65,9 +64,8 @@ function initScrollTrigger(){
                         end: () => "+=1400",
                         scrub: true,
                         pin :true,
-                        anticipatePin: 1,
-            
-                        markers:true,
+                        anticipatePin: 1, 
+                        markers:false,
                     },
                     defaults:{ ease : "linear" , stagger: 0.2},
                     
@@ -163,21 +161,15 @@ $(document).on("scroll", function(e){
     else{
         $(".banner .right-col-inner").removeClass("background-enabled");
     }
+    
     if(scroller >= $(".sub-section.brands").offset().top){
         if(run_once == false){
-            // $(".mid-section .model video.single").hide();
-            // $(".mid-section .model video.multiple")[0].currentTime = 0;
-            // $(".mid-section .model video.multiple")[0].play();
-            // $(".mid-section .model video.multiple").fadeIn();
-            iosVideo.setAttribute("src", multiVideo[0]);
-            normalVideo.setAttribute("src", multiVideo[1]);
-            $("#video")[0].load()
+            $(".mid-section .model video.single").removeClass("active");
+            $(".mid-section .model video.multiple")[0].currentTime = 0;
+            $(".mid-section .model video.multiple")[0].play();
+            $(".mid-section .model video.multiple").addClass("active");
             return run_once = true;
-        }
-        // $(".model .single source").eq(0).attr("src", multiVideo[0])
-        // $(".model .single source").eq(1).attr("src", multiVideo[1])
-        // $(".model .single").trigger("play")
-        // modelVideo.play()
+        } 
     }
     else{
         // $(".model .single source").eq(0).attr("src", singleVideo[0])
@@ -185,14 +177,9 @@ $(document).on("scroll", function(e){
         // $(".model .single").trigger("play")
         // modelVideo.play()
         if(run_once == true){
-            iosVideo.setAttribute("src", singleVideo[0]);
-            normalVideo.setAttribute("src", singleVideo[1]);
-            $("#video")[0].load()
-            // $(".mid-section .model video.multiple").hide();
-            // $(".mid-section .model video.single").fadeIn();
-            
-           return run_once = false;
-
+            $(".mid-section .model video.multiple").removeClass("active");
+            $(".mid-section .model video.single").addClass("active");
+            return run_once = false; 
         }
     }
 })
@@ -202,18 +189,26 @@ $(document).on("scroll", function(e){
 
 // $("#video")[0].load()
 $(document).ready(function(){ 
-    setTimeout(function(){
-        $(".process").css("display","none");
-        $(".preview").css("display","flex");  
-    }, 5000);
+    // setTimeout(function(){
+    //     $(".process").css("display","none");
+    //     $(".preview").css("display","flex"); 
+    // }, 5000);
+    
+    document.onreadystatechange = function () {
+        if (document.readyState !== "complete") {
+            // document.querySelector("body").style.visibility = "hidden";
+            // document.querySelector("#loader").style.visibility = "visible";
+        } else {
+            document.querySelector(".process").style.display = "none";
+            document.querySelector(".preview").style.display = "flex";
+        }
+    };
 
     $(".preview").click(function(){
         initScrollTrigger();
-        $(".preload").hide();  
+        $(".preload").hide();
         $(".all").fadeIn();
-        
-    });
-    
+    }); 
 })
 
 
@@ -250,8 +245,7 @@ function startProgressbar() {
 
 function interval() {
     if (($('.slider .slick-track div[data-slick-index="' + progressBarIndex + '"]').attr("aria-hidden")) === "true") {
-        progressBarIndex = $('.slider .slick-track div[aria-hidden="false"]').data("slick-index");
-        progressbar = $(".slick-dots li").length(); 
+        progressBarIndex = $('.slider .slick-track div[aria-hidden="false"]').data("slick-index"); 
         startProgressbar();
     } else {
         percentTime += 1 / (time + 5);
@@ -276,7 +270,7 @@ function resetProgressbar() {
     clearInterval(tick);
 }
 
-startProgressbar(); 
+startProgressbar();
 // End ticking machine
 
 

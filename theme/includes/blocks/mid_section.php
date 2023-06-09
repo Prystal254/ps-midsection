@@ -14,17 +14,16 @@
         <?php $i = 1;?>    
     </div> -->
     <div class="model">
-        <video id="video" autoplay loop muted class="single" playsinline >
-            <source id="ios" src="<?php echo $block["model_mov"]?>" type='video/quicktime'>
-            <source id="normal" src="<?php echo $block["model"]?>" type="video/webm">
+        <video autoplay loop muted class="single active" playsinline >
+            <source src="<?php echo $block["model_mov"]?>" type='video/quicktime'>
+            <source src="<?php echo $block["model"]?>" type="video/webm">
         </video>
         <!-- <video autoplay loop muted class="multiple" playsinline >
             <source src="<?php echo $block["model_brands_mov"]?>" type='video/quicktime'>
             <source src="<?php echo $block["model_brands"]?>" type="video/webm">
-        </video> -->
+        </video> 
     </div>
-    <div class="sub-sections" >
-        
+    <div class="sub-sections" > 
         <div class="sub-section returns" style="background-image:url('')">
             <div class="inner">
                 <div class="stats">
@@ -128,7 +127,7 @@
                             } 
                         $i = 1;?> -->
                         <?php foreach($brands['videos'] as $bg){?>
-                            <video autoplay loop muted id="myvideo">
+                            <video autoplay loop muted id="myvideo" playsinline>
                                 <source src="<?php echo $bg['video_url']?>" type='video/mp4'>
                             </video>
                         <?php } ?>    

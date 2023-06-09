@@ -33,7 +33,16 @@
             transform: translateX(-50%);
             pointer-events: none;
             &.multiple{
-                display:none;
+                display:none; 
+                &.active{
+                    display: block;  
+                } 
+            }
+            &.single{
+                display:none;  
+                &.active{
+                    display: block;  
+                }
             }
         }
         &.top{
