@@ -137,6 +137,37 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_6483a3df6c9ea": {
+                    "key": "layout_6483a3df6c9ea",
+                    "name": "preload",
+                    "label": "Preload",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6483a3e36c9eb",
+                            "label": "fileds",
+                            "name": "fileds",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_6483a34546ab1"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Block",
@@ -172,5 +203,5 @@
     ],
     "active": 1,
     "description": "Block Chooser for all content types that will have blocks.",
-    "modified": 1685402560
+    "modified": 1686348792
 }

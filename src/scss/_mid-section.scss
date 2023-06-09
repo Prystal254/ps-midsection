@@ -34,6 +34,15 @@
             pointer-events: none;
             &.multiple{
                 display:none; 
+                &.active{
+                    display: block;  
+                } 
+            }
+            &.single{
+                display:none;  
+                &.active{
+                    display: block;  
+                }
             }
         }
         &.top{

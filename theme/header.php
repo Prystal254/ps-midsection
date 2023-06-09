@@ -36,6 +36,7 @@
   ?>">
   <div class="preload">
     <div class="container" style="background-image:url('/wp-content/uploads/2023/06/Group-56-min-min.png')">
+    <img src="" alt="">
       <div class="inner">
         <div class="title">Prince St.</div>
         <div class="box">

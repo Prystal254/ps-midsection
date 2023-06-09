@@ -28,8 +28,7 @@
               break;
             case 'about_us':
               include 'blocks/about_us.php';
-              break;
-            
+              break; 
           }
         }
       }

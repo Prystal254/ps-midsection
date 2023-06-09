@@ -100,6 +100,15 @@ if( function_exists('acf_add_options_page') ) {
       'icon_url' => 'dashicons-menu-alt',
       
   ));
+    acf_add_options_page(array(
+      'page_title'     => 'PreLoad',
+      'menu_title'    => 'PreLoad',
+      'menu_slug'     => 'preload',
+      'capability'    => 'edit_posts',
+      'redirect'        => false,
+      'position' => '40', 
+      
+  ));
 }
 
 

@@ -162,32 +162,42 @@ $(document).on("scroll", function(e){
     
     if(scroller >= $(".sub-section.brands").offset().top){
         if(run_once == false){
-            $(".mid-section .model video.single").hide(); 
+            $(".mid-section .model video.single").removeClass("active");
             $(".mid-section .model video.multiple")[0].currentTime = 0;
             $(".mid-section .model video.multiple")[0].play();
-            $(".mid-section .model video.multiple").fadeIn(); 
+            $(".mid-section .model video.multiple").addClass("active");
             return run_once = true;
         } 
     }
     else{
         if(run_once == true){
-            $(".mid-section .model video.multiple").hide();
-            $(".mid-section .model video.single").fadeIn();
-            return run_once = false;
+            $(".mid-section .model video.multiple").removeClass("active");
+            $(".mid-section .model video.single").addClass("active");
+            return run_once = false; 
         }
     }
 })
  
 $(document).ready(function(){ 
-    setTimeout(function(){
-        $(".process").css("display","none");
-        $(".preview").css("display","flex");  
-    }, 5000);
+    // setTimeout(function(){
+    //     $(".process").css("display","none");
+    //     $(".preview").css("display","flex"); 
+    // }, 5000);
+    
+    document.onreadystatechange = function () {
+        if (document.readyState !== "complete") {
+            // document.querySelector("body").style.visibility = "hidden";
+            // document.querySelector("#loader").style.visibility = "visible";
+        } else {
+            document.querySelector(".process").style.display = "none";
+            document.querySelector(".preview").style.display = "flex";
+        }
+    };
 
     $(".preview").click(function(){
         initScrollTrigger();
         $(".preload").hide();
-        $(".all").fadeIn(); 
+        $(".all").fadeIn();
     }); 
 })
 
@@ -250,7 +260,7 @@ function resetProgressbar() {
     clearInterval(tick);
 }
 
-startProgressbar(); 
+startProgressbar();
 // End ticking machine
 
 
