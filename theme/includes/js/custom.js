@@ -118,7 +118,9 @@ function initScrollTrigger(){
 
 
 
-
+let iosVideo = document.getElementById("ios");
+let normalVideo = document.getElementById("normal");
+console.log(iosVideo, normalVideo)
 var run_once = false;
 // this is for the header - logo scroll
 $(document).on("scroll", function(e){
@@ -163,25 +165,42 @@ $(document).on("scroll", function(e){
     }
     if(scroller >= $(".sub-section.brands").offset().top){
         if(run_once == false){
-            $(".mid-section .model video.single").hide();
-            $(".mid-section .model video.multiple")[0].currentTime = 0;
-            $(".mid-section .model video.multiple")[0].play();
-            $(".mid-section .model video.multiple").fadeIn();
+            // $(".mid-section .model video.single").hide();
+            // $(".mid-section .model video.multiple")[0].currentTime = 0;
+            // $(".mid-section .model video.multiple")[0].play();
+            // $(".mid-section .model video.multiple").fadeIn();
+            iosVideo.setAttribute("src", multiVideo[0]);
+            normalVideo.setAttribute("src", multiVideo[1]);
+            $("#video")[0].load()
             return run_once = true;
         }
-        
+        // $(".model .single source").eq(0).attr("src", multiVideo[0])
+        // $(".model .single source").eq(1).attr("src", multiVideo[1])
+        // $(".model .single").trigger("play")
+        // modelVideo.play()
     }
     else{
+        // $(".model .single source").eq(0).attr("src", singleVideo[0])
+        // $(".model .single source").eq(1).attr("src", singleVideo[1])
+        // $(".model .single").trigger("play")
+        // modelVideo.play()
         if(run_once == true){
-            $(".mid-section .model video.multiple").hide();
-            $(".mid-section .model video.single").fadeIn();
+            iosVideo.setAttribute("src", singleVideo[0]);
+            normalVideo.setAttribute("src", singleVideo[1]);
+            $("#video")[0].load()
+            // $(".mid-section .model video.multiple").hide();
+            // $(".mid-section .model video.single").fadeIn();
             
            return run_once = false;
 
         }
     }
 })
- 
+// console.log()
+// // console.log("singleVideo" ,singleVideo)
+// // console.log("multiVideo", multiVideo)
+
+// $("#video")[0].load()
 $(document).ready(function(){ 
     setTimeout(function(){
         $(".process").css("display","none");

@@ -14,14 +14,14 @@
         <?php $i = 1;?>    
     </div> -->
     <div class="model">
-        <video autoplay loop muted class="single" playsinline >
-            <source src="<?php echo $block["model_mov"]?>" type='video/quicktime'>
-            <source src="<?php echo $block["model"]?>" type="video/webm">
+        <video id="video" autoplay loop muted class="single" playsinline >
+            <source id="ios" src="<?php echo $block["model_mov"]?>" type='video/quicktime'>
+            <source id="normal" src="<?php echo $block["model"]?>" type="video/webm">
         </video>
-        <video autoplay loop muted class="multiple" playsinline >
+        <!-- <video autoplay loop muted class="multiple" playsinline >
             <source src="<?php echo $block["model_brands_mov"]?>" type='video/quicktime'>
             <source src="<?php echo $block["model_brands"]?>" type="video/webm">
-        </video>
+        </video> -->
     </div>
     <div class="sub-sections" >
         
@@ -177,4 +177,6 @@
 </div>
 <script>
     let backgrounds = ["<?php echo $returns['background_image']['url']; ?>", "<?php echo $conversion['background_image']['url']; ?>"];
+    let singleVideo = ["<?php echo $block["model_mov"]?>", "<?php echo $block["model"]?>"];
+    let multiVideo = ["<?php echo $block["model_brands_mov"]?>", "<?php echo $block["model_brands"]?>"];
 </script>
