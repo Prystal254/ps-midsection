@@ -33,7 +33,7 @@
             transform: translateX(-50%);
             pointer-events: none;
             &.multiple{
-                display:none;
+                display:none; 
             }
         }
         &.top{

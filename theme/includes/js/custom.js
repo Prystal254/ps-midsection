@@ -17,9 +17,8 @@ function initScrollTrigger(){
                         end: () => "+=1400",
                         scrub: true,
                         pin :true,
-                        anticipatePin: 1,
-            
-                        markers:true,
+                        anticipatePin: 1, 
+                        markers:false,
                     },
                     defaults:{ ease : "linear" , stagger: 0.2},
                     
@@ -65,9 +64,8 @@ function initScrollTrigger(){
                         end: () => "+=1400",
                         scrub: true,
                         pin :true,
-                        anticipatePin: 1,
-            
-                        markers:true,
+                        anticipatePin: 1, 
+                        markers:false,
                     },
                     defaults:{ ease : "linear" , stagger: 0.2},
                     
@@ -161,23 +159,21 @@ $(document).on("scroll", function(e){
     else{
         $(".banner .right-col-inner").removeClass("background-enabled");
     }
+    
     if(scroller >= $(".sub-section.brands").offset().top){
         if(run_once == false){
-            $(".mid-section .model video.single").hide();
+            $(".mid-section .model video.single").hide(); 
             $(".mid-section .model video.multiple")[0].currentTime = 0;
             $(".mid-section .model video.multiple")[0].play();
-            $(".mid-section .model video.multiple").fadeIn();
+            $(".mid-section .model video.multiple").fadeIn(); 
             return run_once = true;
-        }
-        
+        } 
     }
     else{
         if(run_once == true){
             $(".mid-section .model video.multiple").hide();
             $(".mid-section .model video.single").fadeIn();
-            
-           return run_once = false;
-
+            return run_once = false;
         }
     }
 })
@@ -190,11 +186,9 @@ $(document).ready(function(){
 
     $(".preview").click(function(){
         initScrollTrigger();
-        $(".preload").hide();  
-        $(".all").fadeIn();
-        
-    });
-    
+        $(".preload").hide();
+        $(".all").fadeIn(); 
+    }); 
 })
 
 
@@ -231,8 +225,7 @@ function startProgressbar() {
 
 function interval() {
     if (($('.slider .slick-track div[data-slick-index="' + progressBarIndex + '"]').attr("aria-hidden")) === "true") {
-        progressBarIndex = $('.slider .slick-track div[aria-hidden="false"]').data("slick-index");
-        progressbar = $(".slick-dots li").length(); 
+        progressBarIndex = $('.slider .slick-track div[aria-hidden="false"]').data("slick-index"); 
         startProgressbar();
     } else {
         percentTime += 1 / (time + 5);

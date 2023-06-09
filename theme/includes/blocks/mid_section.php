@@ -128,7 +128,7 @@
                             } 
                         $i = 1;?> -->
                         <?php foreach($brands['videos'] as $bg){?>
-                            <video autoplay loop muted id="myvideo">
+                            <video autoplay loop muted id="myvideo" playsinline>
                                 <source src="<?php echo $bg['video_url']?>" type='video/mp4'>
                             </video>
                         <?php } ?>    
