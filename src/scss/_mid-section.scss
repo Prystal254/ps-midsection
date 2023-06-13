@@ -26,22 +26,29 @@
         background-repeat:no-repeat;
         background-position:center top;
         background-size:cover;
-        video{
+        pointer-events: none;
+        canvas{
             position: absolute;
             left: 50%;
             height: 100%;
             transform: translateX(-50%);
             pointer-events: none;
-            &.multiple{
+            &#multiple{
                 display:none; 
                 &.active{
                     display: block;  
                 } 
+                &.hide{
+                    display: none;  
+                } 
             }
-            &.single{
-                display:none;  
+            &#single{
+                display:none; 
                 &.active{
                     display: block;  
+                }
+                &.hide{
+                    display: none;  
                 }
             }
         }

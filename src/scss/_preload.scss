@@ -3,6 +3,10 @@
 }
 .preload{
     // display: none; 
+    .preloader-bg{
+        position: absolute;
+        inset: 0;
+    }
     .container{
         background-repeat: no-repeat;
         height: 100vh;

@@ -34,15 +34,22 @@
         echo ' adminbar';
     }
   ?>">
+  <?php
+    $image = get_field("image", "option");
+    $title = get_field("title", "option");
+    $box_title = get_field("box_title", "option");
+    $box_desc = get_field("box_desc", "option");
+    $box_subtext = get_field("box_subtext", "option");
+  ?>
   <div class="preload">
     <div class="container" style="background-image:url('/wp-content/uploads/2023/06/Group-56-min-min.png')">
-    <img src="" alt="">
+      <img class="preloader-bg" src="<?php echo $image;?>" alt="">
       <div class="inner">
-        <div class="title">Prince St.</div>
+        <div class="title"><?php echo $title;?></div>
         <div class="box">
-          <div class="head">peek at our demostore.</div>
-          <div class="subtext">Wellcome to our demo store. We are currently looking for alpha testers do develop more experimental stores. Dont hesitate to contact us</div>
-          <span>If things take a minute, please sit tight. Loading times in production will be around around 5s.</span>
+          <div class="head"><?php echo $box_title;?></div>
+          <div class="subtext"><?php echo $box_desc;?></div>
+          <span><?php echo $box_subtext;?></span>
           <div class="box-btn">
               <div href="#" class="process" >
                 🤖
