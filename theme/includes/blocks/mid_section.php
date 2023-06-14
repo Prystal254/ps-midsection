@@ -14,13 +14,13 @@
         <?php $i = 1;?>    
     </div> -->
     <div class="model">
-        <canvas id="single"></canvas>
-        <canvas id="multiple"></canvas>
-        <!-- <video autoplay loop muted class="single active" playsinline >
+        <!-- <canvas id="single"></canvas>
+        <canvas id="multiple"></canvas> -->
+        <video autoplay loop muted class="single active" playsinline >
             <source src="<?php echo $block["model_mov"]?>" type='video/quicktime'>
             <source src="<?php echo $block["model"]?>" type="video/webm">
         </video>
-        <video id="multiple" autoplay loop muted class="multiple" playsinline >
+        <!-- <video id="multiple" autoplay loop muted class="multiple" playsinline >
             <source src="<?php echo $block["model_brands_mov"]?>" type='video/quicktime'>
             <source src="<?php echo $block["model_brands"]?>" type="video/webm">
         </video>  -->
@@ -101,6 +101,23 @@
         <div class="sub-section brands">
             <div class="inner">
                 <div class="screen">
+                    <div class="ticker">
+                        <div class="dot">
+                            <div class="progress"></div>
+                        </div>
+                        <div class="dot">
+                            <div class="progress"></div>
+                        </div>
+                        <div class="dot">
+                            <div class="progress"></div>
+                        </div>
+                        <div class="dot">
+                            <div class="progress"></div>
+                        </div>
+                        <div class="dot">
+                            <div class="progress"></div>
+                        </div>
+                    </div>
                     <div class="dots">
                         <svg class="desktop" width="54" height="14" viewBox="0 0 54 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="7" cy="7" r="6.5" stroke="black" stroke-opacity="0.24"/>
@@ -120,19 +137,9 @@
                         </svg>
                     </div>
                     <div class="screen-wrap single-item">
-                        <!-- <?php 
-                            $i = 1;
-                                foreach($brands["bg_gallery"] as $bg){?>
-                                    <img src="<?php echo $bg?>" alt="" class="brand-bg brand-bg<?php echo $i;?>">    
-                                <?php 
-                                $i++;    
-                            } 
-                        $i = 1;?> -->
-                        <?php foreach($brands['videos'] as $bg){?>
-                            <video autoplay loop muted id="myvideo" playsinline>
-                                <source src="<?php echo $bg['video_url']?>" type='video/mp4'>
-                            </video>
-                        <?php } ?>    
+                        <video loop muted id="myvideo" playsinline>
+                            <source src="https://res.cloudinary.com/dzbpsu654/video/upload/v1686689977/new_3_e4axsj.mp4" type='video/mp4'>
+                        </video>
                     </div>
                 </div>
                 <div class="cta">

@@ -27,13 +27,13 @@
         background-position:center top;
         background-size:cover;
         pointer-events: none;
-        canvas{
+        video{
             position: absolute;
             left: 50%;
             height: 100%;
             transform: translateX(-50%);
             pointer-events: none;
-            &#multiple{
+            &.multiple{
                 display:none; 
                 &.active{
                     display: block;  
@@ -42,7 +42,7 @@
                     display: none;  
                 } 
             }
-            &#single{
+            &.single{
                 display:none; 
                 &.active{
                     display: block;  
