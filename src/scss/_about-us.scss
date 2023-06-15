@@ -88,17 +88,38 @@
                         }
                     }
                     .about-us-list{
-                        padding-left: 30px;
-                        padding-right: 30px;
+                        padding-right: 50px;
                         ul{
                             li{
-                                font-family: 'Inter';
-                                font-style: normal;
-                                font-weight: 400;
-                                font-size: 18px;
-                                line-height: 24px;
-                                letter-spacing: 0.06em;
-                                color: #000000;
+                                display: flex;
+                                margin-bottom: 10px;
+                                grid-gap: 20px;
+                                align-items: flex-start;
+                                .icon{
+                                    width: 30px;
+                                    height: 30px;
+                                    img{
+                                        width: 100%;
+                                    }
+                                }
+                                .item-content{
+                                    .item-title{
+                                        font-family: $lato;
+                                        font-weight: 500;
+                                        font-size: 20px;
+                                        line-height: 1.2;
+                                        letter-spacing: 0.1em;
+                                        text-transform: uppercase;
+                                        color: #000000;
+                                        margin-bottom: 5px;
+                                    }
+                                    .item-text{
+                                        font-family: $inter;
+                                        font-weight: 400;
+                                        font-size: 14px;
+                                        line-height: 1.2;
+                                    }
+                                }
                             }
                         }
                     }

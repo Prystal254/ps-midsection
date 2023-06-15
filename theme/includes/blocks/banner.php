@@ -4,6 +4,9 @@
             <div class="left-col">
                 <div class="left-col-inner">
                     <div class="card">
+                        <div class="info-box">
+                            <?php echo $block['info_box']; ?>
+                        </div>
                         <div class="gif-container">
                             <div class="gif">
                                 <video autoplay loop muted playsinline>

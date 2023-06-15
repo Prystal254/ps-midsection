@@ -164,7 +164,10 @@ function initScrollTrigger(){
                 if(section.classList.contains("returns")){
                     tl.to(section.querySelector(".stats"), {opacity:1, duration:1} );
                     tl.to(section.querySelector(".stats"), {opacity:0, duration:1, delay:3}, ">");
-            
+                    
+                    tl.to(section.querySelector(".info-box"), {opacity:1, duration:1,}, "0" );
+                    tl.to(section.querySelector(".info-box"), {opacity:0, duration:1, delay:3}, ">");
+
                     gsap.set(section.querySelector(".description-blurb"), { yPercent:100, opacity:0})
                     tl.to(section.querySelector(".description-blurb"), { yPercent:0, opacity:1, duration:1}, "0");
                     tl.to(section.querySelector(".description-blurb"), { yPercent:100, opacity:0, duration:1 , delay:3}, ">");
@@ -177,6 +180,9 @@ function initScrollTrigger(){
                     tl.to(section.querySelector(".stats"), {opacity:1, duration:1} );
                     tl.to(section.querySelector(".stats"), {opacity:0, duration:1, delay:3}, ">");
                     
+                    tl.to(section.querySelector(".info-box"), {opacity:1, duration:1,}, "0" );
+                    tl.to(section.querySelector(".info-box"), {opacity:0, duration:1, delay:3}, ">");
+
                     gsap.set(section.querySelector(".cta"), {xPercent:-100, opacity:0});
                     tl.to(section.querySelector(".cta"), { xPercent:0, opacity:1, duration:1}, "0");
                     tl.to(section.querySelector(".cta"), { xPercent:-100, opacity:0, duration:1 , delay:3}, ">");
@@ -185,7 +191,11 @@ function initScrollTrigger(){
                     gsap.set(section.querySelector(".cta"), {xPercent:-100, opacity:0});
                     tl.to(section.querySelector(".cta"), { xPercent:0, opacity:1, duration:1}, "0");
                     tl.to(section.querySelector(".cta"), { xPercent:-100, opacity:0, duration:2 , delay:5}, ">");
-            
+
+                    gsap.set(section.querySelector(".info-box"), {xPercent:100, opacity:0});
+                    tl.to(section.querySelector(".info-box"), { xPercent:0, opacity:1, duration:1}, "0");
+                    tl.to(section.querySelector(".info-box"), { xPercent:100, opacity:0, duration:2 , delay:5}, ">");
+                    
                     tl.to(section.querySelector(".stat-marquee "), {xPercent:-80, duration:4}, "0")
             
                     tl.to(section.querySelector(".numbers"), {scale:2.5 , duration:4 ,delay:1}, "0");
@@ -302,7 +312,7 @@ $(document).on("scroll", function(e){
         $(".banner .right-col-inner").removeClass("background-enabled");
     }
     
-    if(scroller >= $(".sub-section.brands").offset().top){
+    if(scroller >= ($(".sub-section.brands").offset().top - 400)){
         // $("#myVideo").load();
 
         
@@ -321,11 +331,12 @@ $(document).on("scroll", function(e){
             video_run_once = true;
         }
         if(run_once == false){
-            // $(".mid-section .model .single").removeClass("active");
-            // $(".mid-section .model video.multiple")[0].currentTime = 0;
-            // $(".mid-section .model video.multiple")[0].play();
-            // $(".mid-section .model video.single")[0].pause();
-            // $(".mid-section .model .multiple").addClass("active");
+            $(".mid-section .model .single").removeClass("active");
+            $(".mid-section .model video.multiple")[0].currentTime = 0;
+            $(".mid-section .model video.multiple")[0].play();
+            $(".mid-section .model video.single")[0].pause();
+            $(".mid-section .model .multiple").addClass("active");
+            console.log("change video")
             return run_once = true;
         } 
     }
@@ -339,14 +350,15 @@ $(document).on("scroll", function(e){
             // $("#myvideo").get(0).pause()
         // }
         if(run_once == true){
-            // $(".mid-section .model video.multiple")[0].pause();
-            // $(".mid-section .model video.single")[0].play();
+            $(".mid-section .model video.multiple")[0].pause();
+            $(".mid-section .model video.single")[0].play();
+            console.log("single video")
             if(multiple_video_ran == false){
                 // loadImagesAndPlay();
                 multiple_video_ran = true;
             }
-            // $(".mid-section .model .multiple").removeClass("active");
-            // $(".mid-section .model .single").addClass("active");
+            $(".mid-section .model .multiple").removeClass("active");
+            $(".mid-section .model .single").addClass("active");
             return run_once = false; 
         }
     }

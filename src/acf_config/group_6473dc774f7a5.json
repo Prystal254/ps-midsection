@@ -296,7 +296,7 @@
                                     "key": "field_6473de3066aac",
                                     "label": "Description",
                                     "name": "description",
-                                    "type": "textarea",
+                                    "type": "wysiwyg",
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -306,10 +306,10 @@
                                         "id": ""
                                     },
                                     "default_value": "",
-                                    "placeholder": "",
-                                    "maxlength": "",
-                                    "rows": "",
-                                    "new_lines": ""
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 1,
+                                    "delay": 0
                                 }
                             ]
                         },
@@ -447,6 +447,25 @@
                                     ]
                                 }
                             ]
+                        },
+                        {
+                            "key": "field_648a4d0f70567",
+                            "label": "Info Box",
+                            "name": "info_box",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
                         }
                     ]
                 },
@@ -697,6 +716,25 @@
                                     ]
                                 }
                             ]
+                        },
+                        {
+                            "key": "field_648a4d1a70568",
+                            "label": "Info Box",
+                            "name": "info_box",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
                         }
                     ]
                 },
@@ -917,6 +955,25 @@
                                     ]
                                 }
                             ]
+                        },
+                        {
+                            "key": "field_648a4d2a7056a",
+                            "label": "Info Box",
+                            "name": "info_box",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
                         }
                     ]
                 }
@@ -1017,5 +1074,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1686339815
+    "modified": 1686787982
 }

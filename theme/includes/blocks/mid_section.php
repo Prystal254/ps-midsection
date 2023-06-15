@@ -20,10 +20,10 @@
             <source src="<?php echo $block["model_mov"]?>" type='video/quicktime'>
             <source src="<?php echo $block["model"]?>" type="video/webm">
         </video>
-        <!-- <video id="multiple" autoplay loop muted class="multiple" playsinline >
+        <video id="multiple" autoplay loop muted class="multiple" playsinline >
             <source src="<?php echo $block["model_brands_mov"]?>" type='video/quicktime'>
             <source src="<?php echo $block["model_brands"]?>" type="video/webm">
-        </video>  -->
+        </video> 
     </div>
     <div class="sub-sections" > 
         <div class="sub-section returns" style="background-image:url('')">
@@ -58,6 +58,9 @@
                         </a>
                     </div>
                 </div>
+                <div class="info-box">
+                    <?php echo $returns['info_box']; ?>
+                </div>
             </div>
             <div class="tab_img">
                 <?php foreach($returns['tab_img'] as $tab){ ?>
@@ -91,6 +94,9 @@
                         <div class="icon"><img src="<?php echo $conversion["cta_box"]["button"]["icon"];?>" alt=""></div>
                         <div class="link"><?php echo $conversion["cta_box"]["button"]["link"]["title"];?></div>
                     </a>
+                </div>
+                <div class="info-box">
+                    <?php echo $conversion['info_box']; ?>
                 </div>
             </div>
             <div class="banner-bottom-link">
@@ -156,6 +162,9 @@
                 </div>
                 <div class="numbers">
                     <?php echo $brands["stats"]["numbers"]?>
+                </div>
+                <div class="info-box">
+                    <?php echo $brands['info_box']; ?>
                 </div>
             </div>
             <div class="stat-marquee">

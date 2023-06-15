@@ -25,7 +25,15 @@
                     <div class="about-us-list">
                         <ul>
                             <?php foreach($block['list'] as $listitem){ ?>
-                                <li><?php echo $listitem['list_item']; ?></li>
+                                <li>
+                                    <div class="icon">
+                                        <img class="item-icon" src="<?php echo $listitem['icon']; ?>" alt="">
+                                    </div>
+                                    <div class="item-content">
+                                        <div class="item-title"><?php echo $listitem['item_title']; ?></div>
+                                        <div class="item-text"><?php echo $listitem['item_text']; ?></div>
+                                    </div>
+                                </li>
                             <?php } ?>
                         </ul>
                     </div>
@@ -43,7 +51,7 @@
             </div>
         </div>
         <div class="animated-text-m">
-            <h4>Prince St.</h4>
+            <h4>Prince</h4>
         </div>
         <div class="about-us-bottom">
             <div class="about-us-bottom-container">
