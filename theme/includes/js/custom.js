@@ -221,6 +221,9 @@ function initScrollTrigger(){
                 if(section.classList.contains("returns")){
                     tl.to(section.querySelector(".stats"), {opacity:1, duration:1} );
                     tl.to(section.querySelector(".stats"), {opacity:0, duration:1, delay:3}, ">");
+
+                    tl.to(section.querySelector(".info-box"), {opacity:1, duration:1,}, "0" );
+                    tl.to(section.querySelector(".info-box"), {opacity:0, duration:1, delay:3}, ">");
             
                     gsap.set(section.querySelector(".description-blurb"), { yPercent:100, opacity:0})
                     tl.to(section.querySelector(".description-blurb"), { yPercent:0, opacity:1, duration:1}, "0");
@@ -233,6 +236,9 @@ function initScrollTrigger(){
                 else if(section.classList.contains("conversion")){
                     tl.to(section.querySelector(".stats"), {opacity:1, duration:0.5} );
                     tl.to(section.querySelector(".stats"), {opacity:0, duration:0.5, delay:3}, ">");
+
+                    tl.to(section.querySelector(".info-box"), {opacity:1, duration:1,}, "0" );
+                    tl.to(section.querySelector(".info-box"), {opacity:0, duration:1, delay:3}, ">");
                     
                     gsap.set(section.querySelector(".cta"), {xPercent:-100, opacity:0});
                     tl.to(section.querySelector(".cta"), { xPercent:0, opacity:1, duration:1}, "0");
@@ -242,6 +248,9 @@ function initScrollTrigger(){
                     gsap.set(section.querySelector(".cta"), {yPercent:100, opacity:0});
                     tl.to(section.querySelector(".cta"), { yPercent:0, opacity:1, duration:3.5}, "0");
                     tl.to(section.querySelector(".cta"), { yPercent:-200, opacity:0, duration:2.5}, ">");
+
+                    tl.to(section.querySelector(".info-box"), {opacity:1, duration:1,}, "0" );
+                    tl.to(section.querySelector(".info-box"), {opacity:0, duration:1, delay:3}, ">");
             
                     tl.to(section.querySelector(".stat-marquee "), {xPercent:-80, duration:4}, "0")
             
@@ -369,26 +378,26 @@ $(document).on("scroll", function(e){
 
 // $("#video")[0].load()
 $(document).ready(function(){ 
-    // setTimeout(function(){
-    //     $(".process").css("display","none");
-    //     $(".preview").css("display","flex"); 
-    // }, 5000);
+//     // setTimeout(function(){
+//     //     $(".process").css("display","none");
+//     //     $(".preview").css("display","flex"); 
+//     // }, 5000);
     
-    document.onreadystatechange = function () {
-        if (document.readyState !== "complete") {
-            // document.querySelector("body").style.visibility = "hidden";
-            // document.querySelector("#loader").style.visibility = "visible";
-        } else {
-            document.querySelector(".process").style.display = "none";
-            document.querySelector(".preview").style.display = "flex";
-        }
-    };
+//     document.onreadystatechange = function () {
+//         if (document.readyState !== "complete") {
+//             // document.querySelector("body").style.visibility = "hidden";
+//             // document.querySelector("#loader").style.visibility = "visible";
+//         } else {
+//             document.querySelector(".process").style.display = "none";
+//             document.querySelector(".preview").style.display = "flex";
+//         }
+//     };
 
-    $(".preview").click(function(){
+//     $(".preview").click(function(){
         initScrollTrigger();
-        $(".preload").hide();
-        $(".all").fadeIn();
-    }); 
+//         $(".preload").hide();
+//         $(".all").fadeIn();
+//     }); 
 })
 
 

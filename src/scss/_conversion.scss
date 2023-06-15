@@ -108,7 +108,7 @@
                     margin-left: 100px;
                 }
                 @media(max-width: 567px){
-                    top: 315px;
+                    top: 400px;
                     margin-left: 0px;
                     margin-right: 70px;
                     max-width: none;
@@ -206,6 +206,9 @@
                 right: 0%;
                 bottom: 0%;
                 transform: translateY(50%);
+                @media(max-width: 767px){
+                    bottom: -55%;
+                }
             }
         }
         .banner-bottom-link{

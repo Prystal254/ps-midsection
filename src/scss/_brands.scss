@@ -153,7 +153,7 @@
                     top: auto;
                     bottom: -240px;
                     left: 50%;
-                    transform: translateX(-50%);
+                    // transform: translateX(-50%);
                 }
                 @media(max-width:567px){
                     left: 15%; 
@@ -265,6 +265,13 @@
                 right: 0%;
                 top: 45%;
                 transform:translateX(25%);
+                @media(max-width: 767px){
+                    transform:translateX(-20px);
+                    top: 65%;
+                    right: auto;
+                    left: 0;
+                    opacity: 0;
+                }
             }
         }
         .stat-marquee{

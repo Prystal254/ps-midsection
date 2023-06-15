@@ -41,7 +41,7 @@
     $box_desc = get_field("box_desc", "option");
     $box_subtext = get_field("box_subtext", "option");
   ?>
-  <div class="preload">
+  <!-- <div class="preload">
     <div class="container" style="background-image:url('/wp-content/uploads/2023/06/Group-56-min-min.png')">
       <img class="preloader-bg" src="<?php echo $image;?>" alt="">
       <div class="inner">
@@ -64,5 +64,5 @@
         </div>
       </div> 
     </div>
-  </div>
+  </div> -->
   <div class="all">
